@@ -1,0 +1,570 @@
+/* below header css */
+.background-bg {
+  display: none;
+}
+.header {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.navLogoImg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.menu-logo,
+.menu-icon {
+  display: none;
+}
+div.navLogoImg img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+div.navLogoImg h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "AdorshoLipi", sans-serif;
+  color: green;
+  position: relative;
+}
+
+span.sub-plase-name {
+  position: absolute;
+  font-size: 12px;
+  color: darkgreen;
+  top: 28px;
+}
+ul.navUl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+ul.navUl2 {
+  display: none;
+}
+
+ul.navUl li {
+  list-style: none;
+}
+
+ul.navUl li a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-family: "AdorshoLipi", sans-serif;
+}
+
+ul.navUl li a:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background: green;
+  bottom: 0;
+}
+
+ul.navUl li a:hover::before {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.navUl li a:hover {
+  color: green;
+}
+
+/* header responsive css */
+
+@media (max-width: 1200px) {
+  .background-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(32 32 32 / 65%);
+    transition: all 0.3s ease-in;
+    z-index: 10;
+    cursor: zoom-out;
+  }
+  .header {
+    padding: 5px 5px;
+  }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .menu-icon-logo {
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+  .topItem {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  ul.navUl {
+    display: none;
+  }
+  ul.navUl2 {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background: rgb(32, 32, 32);
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+  }
+
+  ul.navUl2 li {
+    list-style: none;
+  }
+
+  ul.navUl2 li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-family: "AdorshoLipi", sans-serif;
+    display: block;
+    padding: 10px;
+  }
+
+  ul.navUl2 li:hover a {
+    color: green;
+    background-color: gray;
+  }
+
+  ul.navUl2 li a:before {
+    display: none;
+  }
+
+  ul.navUl2 li a:hover::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul.navUl3 {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background: rgb(32, 32, 32);
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+  }
+  ul.navUl3 li {
+    list-style: none;
+  }
+
+  ul.navUl3 li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-family: "AdorshoLipi", sans-serif;
+    display: block;
+    padding: 10px;
+  }
+
+  ul.navUl3 li:hover a {
+    color: green;
+    background-color: gray;
+  }
+
+  ul.navUl3 li a:before {
+    display: none;
+  }
+
+  ul.navUl3 li a:hover::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-logo {
+    display: block;
+  }
+
+  .menu-icon-logo {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(20, 20, 20);
+}
+  .menu-icon-logo2 {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+  div.navLogoImg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  div.navLogoImg h2{
+    font-size: 25px;
+  }
+
+  span.sub-plase-name {
+    position: absolute;
+    font-size: 14px;
+    color: darkgreen;
+    top: 33px;
+}
+
+  .navbar {
+    position: relative;
+  }
+
+  ul.navUl li {
+    padding: 10px;
+  }
+
+  .navLogoImg {
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(32 32 32 / 65%);
+    transition: all 0.3s ease-in;
+    z-index: 10;
+  }
+  .header {
+    padding: 5px 5px;
+  }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .menu-icon-logo {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+  .topItem {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  ul.navUl {
+    display: none;
+  }
+  ul.navUl2 {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background: rgb(32, 32, 32);
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+  }
+
+  ul.navUl2 li {
+    list-style: none;
+  }
+
+  ul.navUl2 li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-family: "AdorshoLipi", sans-serif;
+    display: block;
+    padding: 10px;
+  }
+
+  ul.navUl2 li:hover a {
+    color: green;
+    background-color: gray;
+  }
+
+  ul.navUl2 li a:before {
+    display: none;
+  }
+
+  ul.navUl2 li a:hover::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul.navUl3 {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background: rgb(32, 32, 32);
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+  }
+  ul.navUl3 li {
+    list-style: none;
+  }
+
+  ul.navUl3 li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-family: "AdorshoLipi", sans-serif;
+    display: block;
+    padding: 10px;
+  }
+
+  ul.navUl3 li:hover a {
+    color: green;
+    background-color: gray;
+  }
+
+  ul.navUl3 li a:before {
+    display: none;
+  }
+
+  ul.navUl3 li a:hover::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-logo {
+    display: block;
+  }
+
+  div.navLogoImg img {
+    width:90px;
+    height:90px;
+  }
+  div.navLogoImg h2 {
+   font-size: 25px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  ul.navUl li {
+    padding: 10px;
+  }
+
+  .navLogoImg {
+    gap: 10px !important;
+  }
+  span.sub-plase-name {
+    position: absolute;
+    font-size: 14px;
+    color: darkgreen;
+    top: 33px;
+}
+}
+
+
+
+@media (max-width: 600px) {
+  .background-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(32 32 32 / 65%);
+    transition: all 0.3s ease-in;
+    z-index: 10;
+  }
+  .header {
+    padding: 5px 5px;
+  }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .menu-icon-logo {
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+  .topItem {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  ul.navUl {
+    display: none;
+  }
+  ul.navUl2 {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background: rgb(32, 32, 32);
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+  }
+
+  ul.navUl2 li {
+    list-style: none;
+  }
+
+  ul.navUl2 li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-family: "AdorshoLipi", sans-serif;
+    display: block;
+    padding: 10px;
+  }
+
+  ul.navUl2 li:hover a {
+    color: green;
+    background-color: gray;
+  }
+
+  ul.navUl2 li a:before {
+    display: none;
+  }
+
+  ul.navUl2 li a:hover::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul.navUl3 {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background: rgb(32, 32, 32);
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+  }
+  ul.navUl3 li {
+    list-style: none;
+  }
+
+  ul.navUl3 li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-family: "AdorshoLipi", sans-serif;
+    display: block;
+    padding: 10px;
+  }
+
+  ul.navUl3 li:hover a {
+    color: green;
+    background-color: gray;
+  }
+
+  ul.navUl3 li a:before {
+    display: none;
+  }
+
+  ul.navUl3 li a:hover::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  div.navLogoImg h2 {
+    font-size: 15px;
+  }
+  span.sub-plase-name {
+    position: absolute;
+    font-size: 10px;
+    color: darkgreen;
+    top: 18px;
+  }
+  .menu-logo {
+    display: block;
+  }
+
+  div.navLogoImg img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  ul.navUl li {
+    padding: 10px;
+  }
+
+  .navLogoImg {
+    gap: 10px !important;
+  }
+}
+
+@media (min-width:280px) and (max-width:350px) {
+    div.navLogoImg img {
+        width: 30px;
+        height: 30px;
+      }
+    div.navLogoImg h2 {
+        font-size: 12px;
+      }
+      span.sub-plase-name {
+        position: absolute;
+        font-size: 8px;
+        color: darkgreen;
+        top: 15px;
+      }
+}
