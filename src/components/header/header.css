@@ -217,19 +217,19 @@ ul.navUl li a:hover {
     font-size: 30px;
     cursor: pointer;
     color: rgb(20, 20, 20);
-}
+  }
   .menu-icon-logo2 {
     font-size: 30px;
     cursor: pointer;
     color: #fff;
-}
+  }
 
   div.navLogoImg img {
     width: 100px;
     height: 100px;
   }
 
-  div.navLogoImg h2{
+  div.navLogoImg h2 {
     font-size: 25px;
   }
 
@@ -238,7 +238,7 @@ ul.navUl li a:hover {
     font-size: 14px;
     color: darkgreen;
     top: 33px;
-}
+  }
 
   .navbar {
     position: relative;
@@ -376,11 +376,11 @@ ul.navUl li a:hover {
   }
 
   div.navLogoImg img {
-    width:90px;
-    height:90px;
+    width: 90px;
+    height: 90px;
   }
   div.navLogoImg h2 {
-   font-size: 25px;
+    font-size: 25px;
   }
 
   .navbar {
@@ -399,10 +399,8 @@ ul.navUl li a:hover {
     font-size: 14px;
     color: darkgreen;
     top: 33px;
+  }
 }
-}
-
-
 
 @media (max-width: 600px) {
   .background-bg {
@@ -523,8 +521,9 @@ ul.navUl li a:hover {
   }
 
   div.navLogoImg h2 {
-    font-size: 15px;
+    font-size: 18px;
   }
+
   span.sub-plase-name {
     position: absolute;
     font-size: 10px;
@@ -553,18 +552,18 @@ ul.navUl li a:hover {
   }
 }
 
-@media (min-width:280px) and (max-width:350px) {
-    div.navLogoImg img {
-        width: 30px;
-        height: 30px;
-      }
-    div.navLogoImg h2 {
-        font-size: 12px;
-      }
-      span.sub-plase-name {
-        position: absolute;
-        font-size: 8px;
-        color: darkgreen;
-        top: 15px;
-      }
+@media (min-width: 280px) and (max-width: 400px) {
+  div.navLogoImg img {
+    width: 30px;
+    height: 30px;
+  }
+  div.navLogoImg h2 {
+    font-size: 12px;
+  }
+  span.sub-plase-name {
+    position: absolute;
+    font-size: 8px;
+    color: darkgreen;
+    top: 15px;
+  }
 }
