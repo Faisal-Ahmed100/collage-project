@@ -424,7 +424,7 @@ ul.navUl li a:hover {
     z-index: 10;
   }
   .menu-icon-logo {
-    font-size: 22px;
+    font-size: 25px;
     cursor: pointer;
   }
 
@@ -528,7 +528,7 @@ ul.navUl li a:hover {
     position: absolute;
     font-size: 10px;
     color: darkgreen;
-    top: 18px;
+    top: 22px;
   }
   .menu-logo {
     display: block;
